@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoya - Search Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Zoya</div>
+    <div class="auth-buttons">
+      <button onclick="openModal('login')">Login</button>
+      <button onclick="openModal('signup')">Signup</button>
+    </div>
+  </div>
+
+  <!-- Main search area -->
+  <div class="main">
+    <h1 class="brand">Zoya</h1>
+    <input type="text" id="searchInput" placeholder="Search anything..." />
+    <div id="result"></div>
+  </div>
+
+  <!-- Modal for Login/Signup -->
+  <div id="authModal" class="modal">
+    <div class="modal-content animate">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="formTitle">Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="submitAuth()">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
